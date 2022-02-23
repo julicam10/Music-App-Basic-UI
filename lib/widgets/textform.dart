@@ -28,11 +28,20 @@ class ContainerTextFrom extends StatelessWidget {
               child: TextFormLogin(
                 hintText: 'Username, email or phone',
                 label: 'Username, email or phone',
+                icon: Icon(Icons.people_alt_rounded),
+                textInputType: TextInputType.emailAddress,
+                obscureText: false,
               ),
             ),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
-              child: TextFormLogin(hintText: 'Password', label: 'Password'),
+              child: TextFormLogin(
+                hintText: 'Password',
+                label: 'Password',
+                icon: Icon(Icons.password_rounded),
+                textInputType: TextInputType.visiblePassword,
+                obscureText: true,
+              ),
             ),
           ],
         ),
@@ -46,19 +55,29 @@ class TextFormLogin extends StatelessWidget {
     Key? key,
     required this.hintText,
     required this.label,
+    this.icon,
+    required this.textInputType,
+    required this.obscureText,
   }) : super(key: key);
 
   final String hintText;
   final String label;
+  final Icon? icon;
+  final TextInputType textInputType;
+  final bool obscureText;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      keyboardType: TextInputType.emailAddress,
+      obscureText: obscureText,
+      keyboardType: textInputType,
       decoration: InputDecoration(
-        icon: const Icon(Icons.people_rounded),
-        hintText: '$hintText',
-        label: Text('$label'),
+        icon: icon,
+        hintText: hintText,
+        label: Text(
+          label,
+          style: const TextStyle(fontWeight: FontWeight.bold),
+        ),
       ),
     );
   }
