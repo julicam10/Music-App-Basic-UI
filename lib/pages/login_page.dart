@@ -17,9 +17,18 @@ class LoginPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.end,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
-            IconLogo(size: 45),
-            MainText(text: 'Hi there! Welcome back.'),
-            FormFie1ldInput(hintText: 'Username, email or phone'),
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 10),
+              child: IconLogo(size: 45),
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 10),
+              child: MainText(text: 'Hi there! Welcome back.'),
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 10),
+              child: ContainerTextFrom(),
+            )
           ],
         ),
       ),

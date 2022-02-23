@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:music_app_ui/pages/login_page.dart';
 import 'package:music_app_ui/pages/singup_page.dart';
-import 'package:music_app_ui/pages/star_page.dart';
+import 'package:music_app_ui/pages/start_page.dart';
 
 void main() => runApp(MyApp());
 
