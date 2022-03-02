@@ -37,7 +37,7 @@ class SingUpPage extends StatelessWidget {
                 child: Buttons(
                   text: 'Sign up with email',
                   color: Colors.blue,
-                  navigatorRoute: '',
+                  navigatorRoute: 'home_page',
                 ),
               ),
               Padding(

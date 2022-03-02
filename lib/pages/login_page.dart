@@ -47,7 +47,7 @@ class LoginPage extends StatelessWidget {
                 child: Buttons(
                   text: 'Login',
                   color: Colors.blue,
-                  navigatorRoute: '',
+                  navigatorRoute: 'home_page',
                 ),
               ),
               Padding(
