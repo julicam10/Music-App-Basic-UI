@@ -10,14 +10,9 @@ class RecentPlayWidget extends StatelessWidget {
     return ListView.builder(
       itemBuilder: (context, posicion) {
         return Container(
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Container(
-              height: 130,
-              width: 130,
-              color: Colors.red,
-            ),
-          ),
+          height: 130,
+          width: 130,
+          color: Colors.red,
         );
       },
     );
