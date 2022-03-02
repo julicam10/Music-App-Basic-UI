@@ -7,24 +7,13 @@ class RecentPlayWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemBuilder: (context, posicion) {
-        return Container(
-          height: 130,
-          width: 130,
-          color: Colors.red,
-        );
-      },
+    return SingleChildScrollView(
+      scrollDirection: Axis.vertical,
+      child: Container(
+        height: 130,
+        width: 130,
+        color: Colors.red,
+      ),
     );
-    // return ListView(
-    //   scrollDirection: Axis.vertical,
-    //   children: [
-    //     Container(
-    //       height: 130,
-    //       width: 130,
-    //       color: Colors.red,
-    //     ),
-    //   ],
-    // );
   }
 }
