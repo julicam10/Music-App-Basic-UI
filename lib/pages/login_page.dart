@@ -47,6 +47,7 @@ class LoginPage extends StatelessWidget {
                 child: Buttons(
                   text: 'Login',
                   color: Colors.blue,
+                  navigatorRoute: '',
                 ),
               ),
               Padding(
@@ -54,6 +55,7 @@ class LoginPage extends StatelessWidget {
                 child: Buttons(
                   text: 'Create a new account',
                   color: Colors.black,
+                  navigatorRoute: 'singup_page',
                 ),
               ),
               Padding(

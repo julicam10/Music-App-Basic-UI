@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:music_app_ui/widgets/buttons_login.dart';
 import 'package:music_app_ui/widgets/container_sigup.dart';
+import 'package:music_app_ui/widgets/signup_methods.dart';
 
 import '../widgets/img_icon.dart';
-import '../widgets/textform.dart';
 
 class SingUpPage extends StatelessWidget {
   const SingUpPage({Key? key}) : super(key: key);
@@ -31,6 +32,18 @@ class SingUpPage extends StatelessWidget {
                 padding: EdgeInsets.symmetric(vertical: 20),
                 child: ContainerSignUp(),
               ),
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 30, horizontal: 20),
+                child: Buttons(
+                  text: 'Sign up with email',
+                  color: Colors.blue,
+                  navigatorRoute: '',
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20),
+                child: SignupMethods(),
+              )
             ],
           ),
         ),

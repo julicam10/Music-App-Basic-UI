@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:music_app_ui/pages/home_page.dart';
 import 'package:music_app_ui/pages/login_page.dart';
 import 'package:music_app_ui/pages/singup_page.dart';
 import 'package:music_app_ui/pages/start_page.dart';
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
         'star_page': (_) => const StarPage(),
         'login_page': (_) => const LoginPage(),
         'singup_page': (_) => const SingUpPage(),
+        'home_page': (_) => const HomePage()
       },
     );
   }

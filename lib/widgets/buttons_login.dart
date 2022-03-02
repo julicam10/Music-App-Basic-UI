@@ -5,10 +5,12 @@ class Buttons extends StatelessWidget {
     Key? key,
     required this.text,
     required this.color,
+    required this.navigatorRoute,
   }) : super(key: key);
 
   final String text;
   final Color color;
+  final String navigatorRoute;
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +34,7 @@ class Buttons extends StatelessWidget {
           fontSize: 18,
         ),
       ),
-      onPressed: () => Navigator.pushNamed(context, 'singup_page'),
+      onPressed: () => Navigator.pushNamed(context, navigatorRoute),
     );
   }
 }
