@@ -1,16 +1,11 @@
-# music_app_ui
+### Music App UI 'copy'
 
-A new Flutter project.
+I made a music app UI copy, I traid to do it by myself. 
 
-## Getting Started
+I used simple flutter widgets.
 
-This project is a starting point for a Flutter application.
+Im traying to improve my flutter skills.
 
-A few resources to get you started if this is your first Flutter project:
+In folder "Imagenes" you can see what I made.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+###### I don't made it UI, I found it on the internet
