@@ -32,22 +32,31 @@ class HomePage extends StatelessWidget {
         body: Container(
           padding: const EdgeInsets.symmetric(horizontal: 30),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: const [
               Padding(
-                padding: EdgeInsets.only(top: 30),
+                padding: EdgeInsets.only(top: 30, left: 0),
                 child: Text(
                   'Recent played',
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                   ),
+                  textAlign: TextAlign.start,
                 ),
               ),
+              RecentPlayWidget(),
               Padding(
-                padding: EdgeInsets.only(top: 10),
-                child: RecentPlayWidget(),
-              )
+                padding: EdgeInsets.only(top: 30, left: 0),
+                child: Text(
+                  'RECOMMENDED',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  textAlign: TextAlign.start,
+                ),
+              ),
             ],
           ),
         ),
