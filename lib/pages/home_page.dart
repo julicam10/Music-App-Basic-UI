@@ -182,7 +182,7 @@ class HomePage extends StatelessWidget {
                           size: 20,
                         ),
                       ),
-                      trailing: Icon(
+                      trailing: const Icon(
                         Icons.play_arrow_rounded,
                         size: 50,
                       ),
